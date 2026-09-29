@@ -1,11 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        LinkedLists listKu = new LinkedLists();
+        Mobil mobil = new Mobil();
+        mobil.add("Avanza");
+        mobil.add("Brio");
+        mobil.add("Xenia");
+        mobil.display();
 
-        listKu.tambah(25);
-        listKu.tambah(50);
-        listKu.tambah(75);
+        System.out.println();
 
-        listKu.tampilkanList();
+        Sepeda sepeda = new Sepeda();
+        sepeda.add("Polygon");
+        sepeda.add("United");
+        sepeda.add("Pacific");
+        sepeda.display();
     }
 }

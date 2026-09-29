@@ -1,9 +1,9 @@
 public class Node {
-    int nilai;
-    Node selanjutnya;
+    String data;
+    Node next;
 
-    public Node (int nilai){
-        this.nilai = nilai;
-        this.selanjutnya = null;
+    public Node(String data) {
+        this.data = data;
+        this.next = null;
     }
 }
