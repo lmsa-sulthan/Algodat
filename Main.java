@@ -1,17 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        Mobil mobil = new Mobil();
-        mobil.add("Avanza");
-        mobil.add("Brio");
-        mobil.add("Xenia");
-        mobil.display();
+        LinkedList listKomputer = new LinkedList();
 
-        System.out.println();
+        listKomputer.tambah(new Komputer("Asus ROG", 16));
+        listKomputer.tambah(new Komputer("Lenovo Thinkpad", 8));
+        listKomputer.tambah(new Komputer("Acer Swift", 8));
 
-        Sepeda sepeda = new Sepeda();
-        sepeda.add("Polygon");
-        sepeda.add("United");
-        sepeda.add("Pacific");
-        sepeda.display();
+        System.out.println("=== DAFTAR KOMPUTER AWAL ===");
+        listKomputer.tampilkan();
+
+        System.out.println("\n=== PROSES MENGHAPUS ===");
+        listKomputer.hapus(new Komputer("Lenovo Thinkpad"));
+
+        System.out.println("\n=== DAFTAR KOMPUTER SETELAH DIHAPUS ===");
+        listKomputer.tampilkan();
     }
 }
